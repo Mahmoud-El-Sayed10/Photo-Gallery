@@ -42,35 +42,35 @@ $sampleImages = [
     [
         "title" => "Sunset at the Beach",
         "description" => "Beautiful sunset captured at the beach",
-        "filename" => "sunset",
+        "filename" => "Sunset at the Beach.jpg",
         "extension" => "jpg",
         "tags" => ["Nature", "Travel"]
     ],
     [
         "title" => "City Skyline",
         "description" => "Modern skyscrapers in downtown",
-        "filename" => "skyline",
+        "filename" => "City Skyline.jpg",
         "extension" => "jpg",
         "tags" => ["Architecture", "Travel"]
     ],
     [
         "title" => "Mountain Landscape",
         "description" => "Breathtaking mountain view after hiking",
-        "filename" => "mountain",
+        "filename" => "Nature Image.jpg",
         "extension" => "jpg",
         "tags" => ["Nature", "Travel"]
     ],
     [
         "title" => "Abstract Art",
         "description" => "Digital abstract artwork with vibrant colors",
-        "filename" => "abstract",
+        "filename" => "Abstract Art.jpg",
         "extension" => "png",
         "tags" => ["Abstract"]
     ],
     [
         "title" => "Gourmet Dish",
         "description" => "Delicious gourmet dish from a local restaurant",
-        "filename" => "food",
+        "filename" => "Gourmet Dish.jpg",
         "extension" => "jpg",
         "tags" => ["Food"]
     ]

@@ -1,0 +1,121 @@
+.header {
+    background-color: var(--primary);
+    padding: 2vh 0;
+  }
+  
+  .header-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .logo a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .logo a:hover {
+    color: var(--secondary-1);
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+  }
+  
+  .nav-link {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1vh 1vw;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #FFFFFF1A;
+    color: var(--secondary-1);
+  }
+  
+  .user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  .user-name {
+    color: var(--secondary-2);
+    font-weight: 500;
+    padding-right: 1vw;
+    border-right: 1px solid #FFFFFF33;
+  }
+  
+  .logout-button {
+    background: none;
+    border: 1px solid var(--secondary-1);
+    color: var(--secondary-1);
+    padding: 0.8vh 1.5vw;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: var(--secondary-1);
+    color: var(--primary);
+  }
+
+  .mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .navigation {
+      gap: 4vw;
+    }
+    
+    .user-name {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-container {
+      width: 95%;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+    }
+    
+    .navigation {
+      gap: 3vw;
+    }
+    
+    .nav-link {
+      padding: 0.8vh 2vw;
+      font-size: 0.9rem;
+    }
+    
+    .logout-button {
+      padding: 0.6vh 3vw;
+      font-size: 0.8rem;
+    }
+  }

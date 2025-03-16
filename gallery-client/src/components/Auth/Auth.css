@@ -1,0 +1,115 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    background-color: var(--secondary-2);
+  }
+  
+  .auth-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 5vh 5%;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid rgba(105, 43, 65, 0.1);
+  }
+  
+  .auth-title {
+    text-align: center;
+    margin-bottom: 4vh;
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .auth-error {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: var(--error);
+    padding: 1.5vh 1.5vw;
+    border-radius: 4px;
+    margin-bottom: 3vh;
+    font-size: 0.9rem;
+    border-left: 3px solid var(--error);
+  }
+  
+  .form-group {
+    margin-bottom: 3vh;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 1vh;
+    font-weight: 500;
+    color: var(--primary);
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 1.5vh 2%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  
+  .auth-button {
+    width: 100%;
+    padding: 1.5vh 0;
+    margin-top: 2vh;
+    background-color: var(--secondary-1);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #c09f33;
+    transform: translateY(-2px);
+  }
+  
+  .auth-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .auth-footer {
+    margin-top: 4vh;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .auth-footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .auth-footer a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .auth-form {
+      max-width: 90%;
+      padding: 4vh 6%;
+    }
+    
+    .auth-title {
+      font-size: 1.8rem;
+    }
+  }

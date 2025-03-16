@@ -1,0 +1,291 @@
+.image-form-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 4vh auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 4vh 5%;
+    border: 1px solid #692B41;
+  }
+  
+  .form-title {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 4vh;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  
+  .form-error {
+    background-color: #E74C3C1A;
+    border-left: 4px solid var(--error);
+    color: var(--error);
+    padding: 1.5vh 2vw;
+    border-radius: 4px;
+    margin-bottom: 3vh;
+    font-size: 0.95rem;
+  }
+  
+  .image-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+  }
+  
+  .image-upload-area {
+    width: 100%;
+    min-height: 40vh;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 2vh;
+    position: relative;
+  }
+  
+  .image-upload-area:hover {
+    border-color: var(--accent);
+    background-color: rgba(183, 110, 121, 0.02);
+  }
+  
+  .drag-active {
+    border-color: var(--accent);
+    background-color: rgba(183, 110, 121, 0.05);
+  }
+  
+  .upload-placeholder {
+    text-align: center;
+    color: #666;
+    padding: 3vh 0;
+  }
+  
+  .upload-icon {
+    font-size: 3rem;
+    color: #ccc;
+    margin-bottom: 2vh;
+    line-height: 1;
+  }
+  
+  .upload-placeholder p {
+    margin-bottom: 1.5vh;
+    font-size: 1.1rem;
+  }
+  
+  .upload-placeholder small {
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+  
+  .image-preview-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-preview {
+    max-width: 100%;
+    max-height: 40vh;
+    object-fit: contain;
+  }
+  
+  .image-controls {
+    position: absolute;
+    bottom: 2vh;
+    right: 2vw;
+    display: flex;
+    gap: 1vw;
+  }
+  
+  .change-image-btn,
+  .reset-image-btn {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 1vh 1.5vw;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .change-image-btn:hover,
+  .reset-image-btn:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  
+  .form-group {
+    margin-bottom: 2vh;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 1vh;
+    font-weight: 500;
+    color: var(--primary);
+    font-size: 1rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 1.5vh 2vw;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  
+  textarea.form-control {
+    resize: vertical;
+    min-height: 15vh;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh 1vw;
+    margin-bottom: 2vh;
+  }
+  
+  .tag-select-btn {
+    background-color: var(--secondary-2);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0.8vh 1.5vw;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tag-select-btn:hover {
+    border-color: var(--accent);
+    background-color: rgba(183, 110, 121, 0.05);
+  }
+  
+  .tag-select-btn.selected {
+    background-color: var(--primary);
+    color: var(--text-light);
+    border-color: var(--primary);
+  }
+  
+  .add-tag-container {
+    display: flex;
+    gap: 1vw;
+  }
+  
+  .add-tag-input {
+    flex: 1;
+  }
+  
+  .add-tag-btn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 2vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-tag-btn:hover {
+    background-color: #a05c66;
+  }
+  
+  .add-tag-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2vw;
+    margin-top: 3vh;
+  }
+  
+  .btn-primary {
+    background-color: var(--secondary-1);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 4px;
+    padding: 1.2vh 3vw;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c09f33;
+    transform: translateY(-2px);
+  }
+  
+  .btn-primary:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .btn-secondary {
+    background-color: #f0f0f0;
+    color: #666;
+    border: none;
+    border-radius: 4px;
+    padding: 1.2vh 3vw;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #e0e0e0;
+  }
+ 
+  @media (max-width: 768px) {
+    .image-form-container {
+      width: 95%;
+      padding: 3vh 5%;
+    }
+    
+    .image-upload-area {
+      min-height: 30vh;
+    }
+    
+    .form-actions {
+      flex-direction: column-reverse;
+      gap: 1.5vh;
+    }
+    
+    .btn-primary, .btn-secondary {
+      width: 100%;
+      padding: 1.5vh 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-title {
+      font-size: 1.5rem;
+    }
+    
+    .image-controls {
+      position: static;
+      margin-top: 2vh;
+      justify-content: center;
+    }
+    
+    .change-image-btn, 
+    .reset-image-btn {
+      padding: 1vh 4vw;
+    }
+  }
